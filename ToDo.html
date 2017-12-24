@@ -1,18 +1,19 @@
-
-
 <head>
 	<meta charset = "UTF-8">
 	<title>ToDo.html</title>
+	<script src = "listModifier.js"></script>
 	<link rel="stylesheet" type="text/css" href="headerStyle.css">	
 </head>
 
-<div id = "topDiv" class="headDiv">
+<div id = "topDiv" class="headDiv"> 
 	<h3 align="center"> My to do list </h3>
 	<input type="text" id="inputItem" placeholder="Enter an item">
-	<span class="addBtn">Add</span>
-	<!--onclick="addItemToList()" ____ add to span when addItemToList() is created with js-->
+	<span class="addBtn" onclick= "addItemToList()">Add</span>
+	 
 </div>
 
-<ul>
-<li> Green eggs and ham</li>
+<ul id="toDoUl">   
+<li> Green eggs and ham </li>
+<li> Spinach </li>
+<li> Lots and lots of cheese </li>
 </ul>
