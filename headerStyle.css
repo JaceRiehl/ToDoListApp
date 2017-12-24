@@ -1,0 +1,39 @@
+/* CSS File for the To Do list web application */
+* {
+    box-sizing: border-box;
+}
+
+div h3 { 
+    background-color: yellow;
+}
+
+div span {
+	background-color: red;
+}
+
+ul {
+	margin: 0;
+    padding: 0;
+}
+
+ul li {
+	cursor: crosshair;
+	position: relative;
+	overflow: auto;
+	word-wrap: ;
+    width: 200px;
+    height: 40px;
+    padding: 12px 8px 12px 40px;
+    background: #dff;
+    font-size: 20px;
+    transition: 2width 2.0s;
+
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+ul li:hover {
+	width:300px;
+}
