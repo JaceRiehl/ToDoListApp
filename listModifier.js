@@ -6,7 +6,7 @@ function addItemToList(){
 	if (inputValue === '') {
     alert("Please enter something");
 	} else {
-    document.getElementById("toDoUl").appendChild(list);
+    document.getElementById("toDoUl").appendChild(tdList);
 	}
     document.getElementById("inputItem").value = '';
   
