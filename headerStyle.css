@@ -4,7 +4,7 @@
 }
 
 div h3 { 
-    background-color: yellow;
+    background-color: lightblue;
 }
 
 div span {
@@ -19,15 +19,16 @@ ul {
 
 ul li {
 	cursor: crosshair;
-	position: relative;
+    position: relative;
 	overflow: auto;
-	word-wrap: ;
-    width: 200px;
+    width: 400px;
     height: 40px;
     padding: 12px 8px 12px 40px;
     background: #eee;
     font-size: 20px;
     transition: 2width 2.0s;
+    display: inline-block 
+
 
     /* make the list items unselectable */
     -webkit-user-select: none;
@@ -42,15 +43,13 @@ ul li:nth-child(odd) {
 
 ul li:hover {
 	background: fff;
-	width: 400px;
 }
 
 ul li.checked {
-    background: #888;
+    background: #666;
     color: #fff;
     text-decoration: line-through;
 }
-
 /* Add a "checked" mark when clicked on */
 ul li.checked::before {
     content: '';
@@ -62,5 +61,8 @@ ul li.checked::before {
     left: 16px;
     transform: rotate(45deg);
     height: 15px;
-    width: 7px;
+    width: 10px;
 }
+
+
+
