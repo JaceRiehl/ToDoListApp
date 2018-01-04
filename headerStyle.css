@@ -5,11 +5,20 @@
 
 div h3 { 
     background-color: lightblue;
+    width: 400px;
 }
 
+div input {
+    width: 355px;
+    height: 30px;
+    font-size: 130%;
+}
 div span {
 	background-color: red;
 	cursor: crosshair;
+    width: 35px;
+    height: 40px;
+    font-size: 150%; 
 }
 
 ul {
