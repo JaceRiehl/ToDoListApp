@@ -31,6 +31,12 @@ function addItemToList(){
 	document.getElementById("toDoUl").appendChild(tdList);
 	}
 	document.getElementById("inputItem").value = '';
+
+	var span = document.createElement("SPAN");
+	var text = document.createTextNode("\u00D7");
+	span.className = "close";
+	span.appendChild(text);
+	tdList.appendChild(span);
 }
 
 
