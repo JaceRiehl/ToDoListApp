@@ -1,5 +1,17 @@
 window.onload=function(){
-	// Add a "checked" symbol when clicking on a list item
+
+	//add an x beside each list element
+	var myNodelist = document.getElementsByTagName("LI");
+	var i;
+	for (i = 0; i < myNodelist.length; i++) {
+		var span = document.createElement("SPAN");
+		var txt = document.createTextNode("\u00D7");
+		span.className = "close";
+		span.appendChild(txt);
+		myNodelist[i].appendChild(span);
+	}
+
+	// Add a check mark symbol 
 	var list = document.querySelector('UL');
 	list.addEventListener('click', function(ev) {
 		if (ev.target.tagName === 'LI') {

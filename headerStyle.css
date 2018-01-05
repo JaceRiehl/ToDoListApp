@@ -59,7 +59,7 @@ ul li.checked {
     color: #fff;
     text-decoration: line-through;
 }
-/* Add a "checked" mark when clicked on */
+
 ul li.checked::before {
     content: '';
     position: absolute;
@@ -72,6 +72,19 @@ ul li.checked::before {
     height: 15px;
     width: 10px;
 }
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 14px 12px 14px;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+
 
 
 
