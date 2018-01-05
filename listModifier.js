@@ -1,6 +1,6 @@
 window.onload=function(){
 
-	//add an x beside each list element
+	// Add an x beside each list element
 	var myNodelist = document.getElementsByTagName("LI");
 	var i;
 	for (i = 0; i < myNodelist.length; i++) {
@@ -10,9 +10,8 @@ window.onload=function(){
 		span.appendChild(txt);
 		myNodelist[i].appendChild(span);
 	}
-
+	// Allows elements to be deleted when the x is pressed
 	var close = document.getElementsByClassName("close");
-	var i;
 	for(i=0;i<close.length;i++){
 		close[i].onclick = function(){
 			var div = this.parentElement;
@@ -27,8 +26,8 @@ window.onload=function(){
 			ev.target.classList.toggle('checked');
 		}
 	},false);
-
 }
+
 function addItemToList(){
 	var tdList = document.createElement("li");
 	var inputValue = document.getElementById("inputItem").value;
@@ -47,7 +46,14 @@ function addItemToList(){
 	span.appendChild(text);
 	tdList.appendChild(span);
 
-
+	//allows new elements to be disappear when x is pressed
+	var close = document.getElementsByClassName('close');
+	for(i=0;i<close.length;i++){
+		close[i].onclick = function(){
+			var div = this.parentElement;
+			div.style.display = 'none';
+		}
+	}
 }
 
 
