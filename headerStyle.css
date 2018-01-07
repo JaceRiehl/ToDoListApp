@@ -4,8 +4,12 @@
 }
 
 div h3 { 
-    background-color: lightblue;
+    background-color: #f44336;
+    padding: 15px 20px;
+    color: white;
+    text-align: center;
     width: 400px;
+    height:50px;
 }
 
 div input {
@@ -83,6 +87,8 @@ ul li.checked::before {
     background-color: #f44336;
     color: white;
 }
+
+.header
 
 
 
