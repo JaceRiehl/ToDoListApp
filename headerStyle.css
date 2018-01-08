@@ -5,24 +5,36 @@
 
 div h3 { 
     background-color: #f44336;
-    padding: 15px 20px;
     color: white;
     text-align: center;
     width: 400px;
-    height:50px;
+    height: 50px;
+    padding: 15px;
+}
+div h3:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 div input {
     width: 355px;
     height: 30px;
     font-size: 130%;
+    border-radius: 5px;
 }
 div span {
-	background-color: red;
+	background-color: #f44336;
 	cursor: crosshair;
     width: 35px;
-    height: 40px;
+    height: 45px;
     font-size: 150%; 
+    border-radius: 5px;
+    color: white;
+    padding: 1px;
+}
+div span:hover {
+    background-color: #eee;
 }
 
 ul {
@@ -87,9 +99,6 @@ ul li.checked::before {
     background-color: #f44336;
     color: white;
 }
-
-.header
-
 
 
 
